@@ -6,13 +6,13 @@ Bu depo, C dilindeki **"paralel dizilerin" (parallel arrays)** donanım programl
 
 * **Pin Dizisi:** `ledler[]` dizisi `GPIO_PIN_1`'den `GPIO_PIN_4`'e kadar olan pinleri listeler.
 * **Durum Dizisi:** `led_durum[]` dizisi, her pine karşılık gelen durumu (`1` veya `0`) tutar.
-* **Uygulama:** Bir `for` döngüsü bu iki diziyi senkronize olarak gezer ve `? :` (ternary) operatörü ile pinleri ayarlar.
 
-> **💡 Bu Yöntemin Gücü (Veri Odaklı Tasarım)**
->
-> Bu yöntemde, LED desenini değiştirmek için `while(1)` döngüsündeki koda veya mantığa dokunmaya gerek yoktur.
->
-> Sadece `led_durum[]` dizisinin içindeki değerleri (örn: `{1,0,1,0}` veya `{0,1,0,1}`) değiştirmek, tüm LED desenini anında günceller. Bu, kodun "veri-odaklı" (data-driven) olmasını sağlar ve bakımı çok kolaylaştırır.
+> **🔜 Sonraki Adım (Animasyonlu Uygulama)**
+
+> Bu projede tek bir durum dizisi ile **sabit (statik)** bir desen oluşturduk.
+> Bu yöntemi kullanarak **hareketli bir flaşör animasyonu** (Çift/Tek yakma) yapmak için, birden fazla durum dizisinin kullanıldığı bir sonraki projeyi inceleyebilirsiniz:
+> 
+> ➡️ **[09_Cift_Tek_LED_Yakma (Flaşör Efekti)](https://github.com/yurttaskardelen/09_Cift_Tek_LED_Yakma)**
 
 ---
 
